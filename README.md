@@ -1,4 +1,4 @@
-Sample todo app in Postgres, expressJS with Sequelize
+## Sample todo app in Postgres, expressJS with Sequelize
 
 #### Start Server
 
