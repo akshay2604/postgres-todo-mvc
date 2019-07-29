@@ -1,5 +1,11 @@
 ## Sample todo app in Postgres, expressJS with Sequelize
 
+### Install
+
+```
+npm install
+```
+
 #### Start Server
 
 ```
