@@ -9,7 +9,7 @@ npm install
 #### Start Server
 
 ```
-npm run start:dev
+npm run start
 ```
 
 ### Create a DB
