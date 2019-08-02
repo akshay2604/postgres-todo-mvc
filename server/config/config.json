@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "postgres",
-    "password": "Akshaym2604@",
+    "password": "null",
     "database": "todo-pusher",
     "host": "127.0.0.1",
     "dialect": "postgres",
@@ -10,7 +10,7 @@
   },
   "test": {
     "username": "postgres",
-    "password": "Akshaym2604@",
+    "password": "null",
     "database": "todo-pusher-test",
     "host": "127.0.0.1",
     "port": 5432,
