@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "Akshaym2604@",
-    "database": "todo-dev",
+    "database": "todo-pusher",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "port": 5432,
@@ -11,7 +11,7 @@
   "test": {
     "username": "postgres",
     "password": "Akshaym2604@",
-    "database": "todo-test",
+    "database": "todo-pusher-test",
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres",

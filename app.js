@@ -2,9 +2,18 @@ const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 
+var Pusher = require('pusher');
+
 const app = express();
 
 app.use(logger('dev'));
+const channels_client = new Pusher({
+  appId: '833869',
+  key: '28a7c26683f91b08877d',
+  secret: '05f8ef1c094aa75aa4c1',
+  cluster: 'ap2',
+  encrypted: true
+});
 
 app.use(bodyParser.json());
 
@@ -17,4 +26,4 @@ app.get('*', (req, res) =>
     message: 'Welcome to the beginning of nothingness.'
   })
 );
-module.exports = app;
+export { app, channels_client };

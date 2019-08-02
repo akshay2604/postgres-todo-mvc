@@ -1,12 +1,18 @@
 const Todo = require('../models').Todo;
 const TodoItem = require('../models').TodoItem;
+import { channels_client } from '../../app';
 
 module.exports = {
   create(req, res) {
     return Todo.create({
       title: req.body.title
     })
-      .then(todo => res.status(201).send(todo))
+      .then(todo => {
+        channels_client.trigger('my-channel', 'my-event', {
+          message: 'New todo created'
+        });
+        return res.status(201).send(todo);
+      })
       .catch(error => res.status(400).send(error));
   },
   list(req, res) {
